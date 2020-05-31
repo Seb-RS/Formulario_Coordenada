@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mi Coordenada</string>
+    <string name="title_activity_maps">Coordenadas ingresadas</string>
+    <string name="ingresa">Ingresa las coordenadas que desees</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="latitud">Latitud:</string>
+    <string name="longitud">Longitud:</string>
+
+</resources>
