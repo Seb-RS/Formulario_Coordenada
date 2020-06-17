@@ -31,7 +31,7 @@ import java.util.List;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    float x, y, xMe, yMe;
+    double x, y, xMe, yMe;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +46,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void obtenerDato() {
         Bundle datos = this.getIntent().getExtras();
-        x = Float.parseFloat(datos.getString("x"));
-        y = Float.parseFloat(datos.getString("y"));
+        x = Double.parseDouble(datos.getString("x"));
+        y = Double.parseDouble(datos.getString("y"));
     }
 
 
