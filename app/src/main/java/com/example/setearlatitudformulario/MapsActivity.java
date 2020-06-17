@@ -90,11 +90,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         String param = string_origen+"&"+string_destino+"&"+sensor+"&"+modo;
         String salida = "json";
-        String llaveapi = "key=AIzaSyBhKBtYGDGikREEs1W8I7AhVXBISN-vHFs";
+        String llaveapi = "key=AIzaSyAR8GMjtl2ImiDhIhX-rBzvRqUtiDBCJ7A";
 
         resultado = "https://maps.googleapis.com/maps/api/directions/"+salida+"?"+param+"&"+llaveapi;
 
-        //https://maps.googleapis.com/maps/api/directions/json?origin=123,123&destination=456,654&sensor=false&mode=driving&key=AIzaSyBhKBtYGDGikREEs1W8I7AhVXBISN-vHFs
+        //https://maps.googleapis.com/maps/api/directions/json?origin=123,123&destination=456,654&sensor=false&mode=driving&key=AIzaSyAR8GMjtl2ImiDhIhX-rBzvRqUtiDBCJ7A
         // Control + click al link ^^^^^^^^^^^^^^^^^^^^
         return resultado;
     }
