@@ -48,6 +48,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Bundle datos = this.getIntent().getExtras();
         x = Double.parseDouble(datos.getString("x"));
         y = Double.parseDouble(datos.getString("y"));
+        xMe = Double.parseDouble(datos.getString("xuser"));
+        yMe = Double.parseDouble(datos.getString("yuser"));
     }
 
 
@@ -88,12 +90,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         String param = string_origen+"&"+string_destino+"&"+sensor+"&"+modo;
         String salida = "json";
-        String llaveapi = "key=AIzaSyBhKBtYGDGikREEs1W8I7AhVXBISN";
+        String llaveapi = "key=AIzaSyBhKBtYGDGikREEs1W8I7AhVXBISN-vHFs";
 
         resultado = "https://maps.googleapis.com/maps/api/directions/"+salida+"?"+param+"&"+llaveapi;
 
-        //https://maps.googleapis.com/maps/api/directions/json?origin=123,123&destination=456,654&sensor=false&mode=driving
-
+        //https://maps.googleapis.com/maps/api/directions/json?origin=123,123&destination=456,654&sensor=false&mode=driving&key=AIzaSyBhKBtYGDGikREEs1W8I7AhVXBISN-vHFs
+        // Control + click al link ^^^^^^^^^^^^^^^^^^^^
         return resultado;
     }
 
